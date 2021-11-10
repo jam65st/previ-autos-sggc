@@ -1,8 +1,11 @@
 @charset "UTF-8";
-/* SOTA */
+/* CSS By jam65st@icloud.com */
+
+/* Typography */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap');
 
+/* Reset and Normalize */
 @namespace svg url('http://www.w3.org/2000/svg');
 
 :not(svg|*) {
@@ -21,6 +24,7 @@
 	box-sizing : border-box;
 }
 
+/* Init */
 html {
 	-webkit-font-smoothing      : antialiased;
 	text-rendering              : optimizeLegibility;
@@ -69,6 +73,7 @@ body {
 	display : none;
 }
 
+/* Containers | Wrappers*/
 main {
 	display : block;
 	width   : 100vw;
@@ -111,6 +116,8 @@ main {
 	z-index    : -1;
 }
 
+/* Custom HTML */
+.h4 { text-align : center; margin-bottom : 1.5rem; font-weight : 600; }
 a {
 	background      : transparent;
 	color           : #0074d9;
@@ -124,19 +131,20 @@ a:hover {
 	font-weight     : bold;
 	text-decoration : none;
 }
-
 a:not([href]):not([class]) {
 	color           : inherit;
 	text-decoration : none;
 	font-size       : 100%;
 }
-
 a:not([href]):not([class]):hover,
 a:not([href]):not([class]):visited {
 	color           : inherit;
 	text-decoration : none;
 }
 
+.text-center { text-align : center; }
+
+/* FORMS */
 form {
 	display            : flex;
 	flex-direction     : column;
@@ -161,8 +169,6 @@ form + p > a {
 	color       : rgba(255, 176, 32, 1);
 	font-weight : 600;
 }
-
-.h4 { text-align : center; margin-bottom : 1.5rem; font-weight : 600; }
 
 fieldset {
 	display : block;
@@ -265,8 +271,6 @@ button {
 	border-color   : rgba(5, 18, 38, .15);
 }
 
-.text-center { text-align : center; }
-
 footer {
 	position    : fixed;
 	font-size   : .65rem;
@@ -279,7 +283,6 @@ footer {
 
 /* RESPONSIVE */
 .no-movil { display : block; }
-
 .no-desktop { display : none; }
 
 @media screen and (min-width : 319px) {
